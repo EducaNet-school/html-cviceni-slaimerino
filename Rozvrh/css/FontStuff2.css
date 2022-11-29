@@ -1,0 +1,22 @@
+
+caption {
+    border: 0.5px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    font-size: 40px;
+    font-weight: bold;
+    background-color:rgba(137, 43, 226, 0.295)
+}
+th    {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: grey;
+    border: 1px solid black
+}
+td    {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(73, 23, 23, 0.39);
+    border: 1px solid black
+}

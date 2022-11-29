@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+}
+body {
+    background-image: linear-gradient(to bottom right, #333233, #000000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.large_text {
+    font-size: 20px;
+}
+.padding {
+    padding: 12px 0;
+}
+.justify {
+    text-align: justify;
+}
+.box {
+    border-radius: 10px;
+    background-color: rgb(148, 141, 141);
+    padding: 20px;
+    margin: 10px 10px;
+    min-width: 300px;
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+li {
+    text-align: justify;
+    margin: 0 auto;
+    width: 9em;
+}
+.genericbutton {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #b84949;
+    color: black;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.genericbutton:hover {
+    background-color: #55c2da;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+table, th, td {
+    border: 1px solid;
+}
+table {
+    border: none;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 30%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow: scroll;
+    text-align: left;
+}
+.highlightrow {
+    background-color: #9b2525;
+}
