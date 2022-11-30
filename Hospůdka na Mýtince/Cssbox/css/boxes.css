@@ -1,0 +1,62 @@
+.box1 {
+    margin: 3em auto;
+    text-align: center;
+    border: 0.2em black solid;
+    max-width: 300px;
+    padding: 1.5em 1.5em;
+    background-color: aquamarine;
+    border-radius: 1em;
+}
+.circle {
+    margin: 0 auto;
+    width: 4em;
+    height: 4em;
+    text-align: center;
+    background-color: blue;
+    border-radius: 80%;
+
+}
+.buttonus {
+    border-radius: 10px;
+    background-color: #b84949;
+    color: black;
+    margin: 0 auto;
+    padding: 10px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.buttonus:hover {
+    background-color: #ff0000;
+    box-shadow: 0px 12px 16px 0px rgba(0,0,0,0.24), 0px 17px 50px 0px rgba(0,0,0,0.19);
+}
+
+.box2 {
+    margin: 3em auto;
+    text-align: center;
+    border: 0.2em black solid;
+    max-width: 300px;
+    padding: 1.5em 1.5em;
+    background-color: rgb(255, 127, 255);
+}
+.circle1 {
+    margin: 0 auto;
+    width: 4em;
+    height: 4em;
+    text-align: center;
+    background-color: rgb(128, 38, 113);
+    border-radius: 80%;
+
+}
+.buttonus1 {
+    border-radius: 10px;
+    background-color: #fffb00;
+    color: black;
+    margin: 0 auto;
+    padding: 10px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.buttonus1:hover {
+    background-color: #00ff0d;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
