@@ -1,0 +1,23 @@
+
+.one{
+   background-color: red;
+   
+}
+.two {
+    background-color: green;
+    
+}
+.three {
+    background-color: blue;
+    float: right;
+    
+}
+div {
+    float: left;
+    width: 50%;
+    height: 300px;
+}
+h1 {
+    clear: both;
+    
+}
