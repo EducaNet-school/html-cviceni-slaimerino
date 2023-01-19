@@ -1,0 +1,56 @@
+<html lang="en">
+    <body>
+    <script>
+        document.write("Ahoj!")
+    </script>
+    <P>
+    <script>       
+        number  = prompt("Zadej cislo na umocneni")
+        moc = prompt("Zadej cislo kterym chces umocnit")
+        document.write("Vas vypocet je ",number * moc)
+        </script>
+    </P>
+    <p>
+        <script>       
+                name = prompt("Zadej svoje jmeno")
+                document.write("Ahoj ",name)
+        </script>
+    </P>
+    <P id="pepa">
+    <script>
+        pepa = prompt("Neco napis")
+        var input = pepa;
+        var i = 0;
+        var intervalId = setInterval(function() {
+            document.getElementById("pepa").innerHTML += input[i];
+            i++;
+            if (i === input.length) {
+                clearInterval(intervalId);
+            }
+        }, 50);
+    </script>
+    </P>
+    <P>
+        <script>
+            var x = prompt("Zadej cislo ");
+            var faktorial = 1;
+            while(true) {
+                for (x = x; x > 0; x--) {
+                    faktorial *= x;
+                }
+                document.write("Faktorial je " + faktorial)
+                break
+            }
+        </script>
+    </P>
+    <P>
+        <script>
+            num1 = prompt("Zadejte prvni cislo ");
+            num2 = prompt("Zadejte druhe cislo ");
+            num3 = prompt("Zadejte treti cislo ");
+            vysledek = Math.min(num1,num2,num3);
+            document.write("Nejmensi cislo je " + vysledek)
+        </script>
+    </P>
+</body>
+</html>
