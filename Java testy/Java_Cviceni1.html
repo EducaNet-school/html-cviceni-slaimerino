@@ -1,23 +1,27 @@
 <html lang="en">
     <body>
     <script>
+    // ukol 1
         document.write("Ahoj!")
     </script>
     <P>
-    <script>       
+    <script> 
+    // ukol 3
         number  = prompt("Zadej cislo na umocneni")
         moc = prompt("Zadej cislo kterym chces umocnit")
         document.write("Vas vypocet je ",number * moc)
         </script>
     </P>
     <p>
-        <script>       
+        <script> 
+    // ukol 2
                 name = prompt("Zadej svoje jmeno")
                 document.write("Ahoj ",name)
         </script>
     </P>
     <P id="pepa">
     <script>
+    // ukol 4
         pepa = prompt("Neco napis")
         var input = pepa;
         var i = 0;
@@ -27,11 +31,12 @@
             if (i === input.length) {
                 clearInterval(intervalId);
             }
-        }, 50);
+        }, 250);
     </script>
     </P>
     <P>
         <script>
+        // faktorial
             var x = prompt("Zadej cislo ");
             var faktorial = 1;
             while(true) {
@@ -45,12 +50,49 @@
     </P>
     <P>
         <script>
-            num1 = prompt("Zadejte prvni cislo ");
-            num2 = prompt("Zadejte druhe cislo ");
-            num3 = prompt("Zadejte treti cislo ");
-            vysledek = Math.min(num1,num2,num3);
-            document.write("Nejmensi cislo je " + vysledek)
+        // ukol 5
+         //   num1 = prompt("Zadejte prvni cislo ");
+         //   num2 = prompt("Zadejte druhe cislo ");
+          //  num3 = prompt("Zadejte treti cislo ");
+         //   vysledek = Math.min(num1,num2,num3);
+         //   document.write("Nejmensi cislo je " + vysledek)
         </script>
-    </P>
+        <form>
+            Cislo 1: <input type="number" id="one1"/> <br>
+            Cislo 2: <input type="number" id="two2"/> <br>
+            Cislo 3: <input type="number" id="three3"/> <br>
+            <input type="button" value="Najit nejmensi cislo" onclick="fortnite()"/> <br>
+            Vysledek je:  <span id="vysledek"></span>
+
+        </form>
+        <script>
+            // ukol 5 varianta 2
+                    function fortnite() 
+                    {
+                        num1 = document.getElementById("one1").value;
+                        num2 = document.getElementById("two2").value;
+                        num3 = document.getElementById("three3").value;
+                        document.getElementById("vysledek").innerHTML = Math.min(num1,num2,num3)
+                    }
+        </script>
+        </P>
+        <form>
+            Cislo : <input type="number" id="number11"/><br>
+            <input type="button" value="Rozdelit a secist cislo" onclick="tomatotown()"/> <br>
+            Vysledek je: <span id="vysledek2"></span>
+        </form>
+
+        <script>
+            function tomatotown()
+            {
+                var number1 = document.getElementById("number11").value;
+                var number2 = 0;
+                    for (var i = 1; i <= number1; i++) {
+                        number2 += i;
+                    }
+                    document.getElementById("vysledek2").innerHTML = number2
+            }
+        </script>
+
 </body>
 </html>

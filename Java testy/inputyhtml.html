@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head> </head>
+<body> 
+    <form>
+        Cislo 1 : <input type="number" id="one"/> <br>
+        cislo 2 : <input type="number" id="two"/> <br>
+        <input type="button" value="Nasobeni" onclick="nice()"/>
+        <input type="button" value="Deleni" onclick="nice2()"/>
+    </form>
+
+    <p>Vysledek je :  <br> 
+    <span id="result"></span>
+    </p>
+
+    <script type="text/javascript">
+        function nice()
+        {
+            num1 = document.getElementById("one").value;
+            num2 = document.getElementById("two").value;
+            console.log(num1 * num2);
+        document.getElementById("result").innerHTML = num1 * num2;
+        }
+    </script>
+    <script type="text/javascript">
+            function nice2()
+            {
+                num1 = document.getElementById("one").value;
+                num2 = document.getElementById("two").value;
+            document.getElementById("result").innerHTML = num1 / num2;
+            }
+    </script>
+</body>

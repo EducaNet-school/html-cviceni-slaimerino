@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var polozky = [];
+
+        function jidlo() {
+            polozky.push(document.getElementById("pridat").value);
+            document.getElementById("vysledek").innerHTML = polozky.join(", ");
+            console.log(polozky.length);
+
+            if (polozky.length <= 5) {
+                document.getElementById("textovkus").innerHTML = "To ještě unesu";
+            }
+            else if (polozky.length <= 9) {
+                document.getElementById("textovkus").innerHTML = "Pro takový nákup asi zajedu autem";
+            }
+            else {
+                document.getElementById("textovkus").innerHTML = "Toho je moc. To radši koupím přes internet.";
+            }
+        }
+
+        function jidlo2() {
+            document.getElementById("textovkus").innerHTML = "To je všechno - položek je " + polozky.length;
+        }
+    </script>
+
+    <p> 
+        <form> 
+            Nákupní položka: <input type="text" id="pridat"/> <br>
+            <input type="button" value="Potvrď" onclick="jidlo()"/>
+            <input type="button" value="Finish" onclick="jidlo2()"/>
+        </form>
+
+        <p>Váš nákup: <br>
+            <span id="vysledek"></span>
+        </p> 
+
+        <span id="textovkus"></span>
+    </p>
+
+</body>
+</html>
+
+
+
