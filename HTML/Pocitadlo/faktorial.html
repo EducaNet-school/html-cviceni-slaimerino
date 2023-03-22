@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <main>
+        </main> 
+        <script>
+            function necosedeje(n) {
+                if (n == 0 || n == 1) {
+                    return 1
+                }
+                else {return n * necosedeje(n - 1)}
+            }
+            document.write("faktorial cisla", "Je", necosedeje(8))
+        </script>
+
+        <script>
+        function fib(f) {
+            let fib = [0, 1];
+             for (let i = 2; i < f; i++) {
+                fib[i] = fib[i-1] + fib[i-2];
+            }
+            return fib.slice(0, f);
+        }
+        document.write(fib(15))
+        </script>
+    </body>
+</html>
