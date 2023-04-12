@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <main>
+            <button id="pepabtn">pepanator</button>
+            <input class="text" id="pepa"></input>
+            <div class="result">
+                Stisknuto: 
+            </div>
+        </main> 
+        <script>
+            let result = document.getElementById("result")
+            let text = pepa
+            document.getElementById("pepa").addEventListener("keydown", function(event){
+                result = result + event.key.toUpperCase() + "-";
+            })
+        </script>   
+    </body>
+</html>
