@@ -28,6 +28,47 @@
     <h2>Pá: 11.00 – 01.00
     <h2>So: 11.00 – 24.00
     <h2>Ne: 11.00 – 23.00
+    
+    <p style="background-color:rgb(56, 56, 56)">‎</p>
 
+        <div class="">
+        <h2>Kontaktujte nás</h2>
+        <script src="formjava.js"></script>
+        <form>
+
+            <div class="form-group">
+              <label for="contact-name">Jméno</label>
+              <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Enter your name..">
+              <span class='error-message' id='name-error'></span>
+          </div>
+      
+          <div class="form-group">
+              <label for="contact-phone">Telefonní číslo</label>
+              <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Ex: 1231231234">
+              <span class='error-message' id='phone-error'></span>
+          </div>
+      
+          <div class="form-group">
+              <label for="contact-email">Emailová adresa</label>
+              <input type="email" class="form-control" id="contact-email" name="email" placeholder="Enter Email">
+              <span class='error-message' id='email-error'></span>
+          </div>   
+
+          <div class="form-group">
+            <label for="contact-email">Rodné číslo</label>
+            <input type="birthnumber" class="form-control" id="contact-birthnumber" name="birthnumber" placeholder="Enter Rodné číslo">
+            <span class='error-message' id='birthnumber-error'></span>
+        </div>   
+      
+          <div class="form-group">
+              <label for='contactMessage'>Vaše zpráva</label>
+              <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Enter a brief message" ></textarea>
+              <span class='error-message' id='message-error'></span>
+          </div>
+      
+          <button onclick='return validateForm()' class="btn btn-default">Submit</button>
+          <span class='error-message' id='submit-error'></span>
+      </form>
+    </div>
 </foot>
 </html>
